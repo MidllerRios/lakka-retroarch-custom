@@ -10,6 +10,13 @@ Uma página web leve (HTML/CSS/JS) acoplada a um pequeno servidor Python para co
 - **`webportal/deploy.ps1`**: Script PowerShell para realizar o deploy automático do portal web e suas dependências.
 - **`webportal/index.html`**: A interface visual para interagir com o sistema remotamente.
 
+#### 📸 Visualização do Painel (Screenshots)
+*(Adicione seus prints na pasta `docs/` e eles aparecerão aqui)*
+
+![Painel Principal](docs/print1.png)
+<br>
+![Gestão de ROMs](docs/print2.png)
+
 ### 2. Automações e Scripts
 - **`transfer_local.py`**: Utilitário em Python para ajudar na transferência local de ROMs de maneira simplificada, automatizando cópias ou movimentações para dentro da estrutura correta.
 - **`scripts/`**: Pasta destinada a scripts utilitários diversos.
