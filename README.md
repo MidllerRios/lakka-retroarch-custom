@@ -14,17 +14,27 @@ Uma página web leve (HTML/CSS/JS) acoplada a um pequeno servidor Python para co
 - **`transfer_local.py`**: Utilitário em Python para ajudar na transferência local de ROMs de maneira simplificada, automatizando cópias ou movimentações para dentro da estrutura correta.
 - **`scripts/`**: Pasta destinada a scripts utilitários diversos.
 
-## 🚀 Como Usar
+## 🚀 Como Usar e Instalar o Portal Web
 
-### Deploy do Web Portal (A partir do Windows)
-Se você estiver utilizando Windows, pode realizar o deploy do portal no seu ambiente usando o PowerShell:
-1. Abra o PowerShell na pasta `webportal`.
-2. Execute o script de deploy:
+O portal é instalado remotamente no seu Lakka a partir de um computador com Windows.
+
+### 1. Configurando o seu IP
+Antes de instalar, você precisa informar o IP do seu Lakka:
+1. Abra o arquivo **`webportal/deploy.ps1`** com qualquer editor de texto (como o Bloco de Notas).
+2. Na primeira linha, altere a variável `$LHost` para o IP do seu Lakka (ex: `192.168.1.100`).
+3. Salve o arquivo.
+
+### 2. Fazendo o Deploy
+1. Abra o **PowerShell** no Windows e navegue até a pasta `webportal` do repositório.
+2. Execute o script de instalação:
    ```powershell
    .\deploy.ps1
    ```
-3. Acesse a interface gerada via navegador.
+   *Obs: O script usa o `plink` e o `pscp` (ferramentas SSH do PuTTY) para enviar e iniciar os serviços no Lakka automaticamente.*
 
+### 3. Acessando o Painel
+Após o deploy concluir com sucesso, basta abrir o seu navegador e acessar o endereço do seu Lakka na porta 8081:
+👉 **`http://<IP_DO_LAKKA>:8081`**
 ## 📂 Estrutura de Pastas
 
 - `Bios/`: Destinada aos arquivos de BIOS requeridos pelos emuladores do RetroArch.
