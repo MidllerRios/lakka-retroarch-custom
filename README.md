@@ -18,6 +18,11 @@ Uma página web leve (HTML/CSS/JS) acoplada a um pequeno servidor Python para co
 
 O portal é instalado remotamente no seu Lakka a partir de um computador com Windows.
 
+### 0. Habilitando o SSH no Lakka
+Como o deploy usa comunicação segura via rede, você precisa primeiro habilitar o SSH no seu Lakka:
+1. No menu principal do Lakka, vá em **Configurações (Settings)** > **Serviços (Services)**.
+2. Ative a opção **SSH**.
+
 ### 1. Configurando o seu IP
 Antes de instalar, você precisa informar o IP do seu Lakka:
 1. Abra o arquivo **`webportal/deploy.ps1`** com qualquer editor de texto (como o Bloco de Notas).
